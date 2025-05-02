@@ -1,0 +1,23 @@
+[project]
+name = "n-glycan-predictor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "anirudhbhashyam", email = "bhashyam.anirudh@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "polars>=1.29.0",
+    "scikit-learn>=1.6.1",
+]
+
+[project.scripts]
+nglycan = "n_glycan_predictor:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = []
